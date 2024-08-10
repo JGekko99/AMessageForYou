@@ -32,7 +32,7 @@ body {
 }
 
 #welcome {
-    background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia01492_0.jpg') no-repeat center center/cover;
+    background: url('peakpx.jpg') no-repeat center center/cover; /* Use the uploaded image */
     color: #f0f0f0;
 }
 
