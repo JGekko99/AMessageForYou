@@ -4,7 +4,7 @@ body {
     background: black;
     color: white;
     overflow-x: hidden;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
     justify-content: center;
     padding: 20px;
     text-align: center;
-    transition: all 0.3s ease-in-out; /* Smooth transition on scrolling */
+    position: relative;
 }
 
 .section h1 {
@@ -38,13 +38,24 @@ body {
 
 #message {
     background: #1a1a1a;
-    padding: 50px;
+    color: #f0f0f0;
     font-size: 1.2em;
     line-height: 1.6em;
     border-top: 2px solid #444;
     border-bottom: 2px solid #444;
-    opacity: 0.9;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    overflow-y: auto;
+    max-height: 80vh;
     animation: slideIn 2s ease-in-out;
+}
+
+#message .content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
 .signature {
