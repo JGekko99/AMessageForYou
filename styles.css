@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: black;
+    background: rgb(10, 14, 33); /* Darker blue with a hint of purple */
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -37,7 +37,7 @@ body {
 }
 
 #message {
-    background: #1a1a1a;
+    background: rgba(20, 24, 48, 0.9); /* Slightly lighter, deep space color with opacity */
     color: #f0f0f0;
     font-size: 1.2em;
     line-height: 1.6em;
@@ -65,7 +65,7 @@ body {
 }
 
 #photo {
-    background: #0b0b0b;
+    background: rgb(15, 18, 38); /* Another deep space color variant */
 }
 
 #photo img {
