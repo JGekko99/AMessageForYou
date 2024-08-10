@@ -21,16 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('wheel', handleScroll, { passive: true });
 
-    // First scroll interval set to 1 minute (60000 ms)
+    // Scroll to the next section after 5 minutes (300,000 ms)
     setTimeout(() => {
         currentIndex = (currentIndex + 1) % sections.length;
         scrollToSection(currentIndex);
 
-        // Subsequent scrolls every 8 seconds
+        // Continue auto-scrolling every 5 minutes for subsequent sections
         setInterval(() => {
             currentIndex = (currentIndex + 1) % sections.length;
             scrollToSection(currentIndex);
-        }, 8000);
-
-    }, 60000);  // First interval is 60 seconds
+        }, 300000); // 5 minutes
+    }, 300000); // Initial interval is 5 minutes
 });
