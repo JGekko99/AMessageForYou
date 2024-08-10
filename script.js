@@ -12,18 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function handleScroll(e) {
         if (e.deltaY > 0) {
-            currentIndex = (currentIndex + 1) % sections.length;
+            currentIndex = Math.min(sections.length - 1, currentIndex + 1);
         } else {
-            currentIndex = (currentIndex - 1 + sections.length) % sections.length;
+            currentIndex = Math.max(0, currentIndex - 1);
         }
         scrollToSection(currentIndex);
     }
 
     window.addEventListener('wheel', handleScroll, { passive: true });
 
-    // Optional: Auto-scroll to the next section every 5 seconds for a continuous experience
+    // Optional: Auto-scroll to the next section every 8 seconds for a continuous experience
     setInterval(() => {
         currentIndex = (currentIndex + 1) % sections.length;
         scrollToSection(currentIndex);
-    }, 5000);
+    }, 8000);
 });
