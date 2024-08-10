@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#welcome {
+    background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia01492_0.jpg') no-repeat center center/cover;
+}
+
+#message {
+    background: #1a1a1a;
+    padding: 50px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+.signature {
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+#photo {
+    background: #0b0b0b;
+}
+
+#photo img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
